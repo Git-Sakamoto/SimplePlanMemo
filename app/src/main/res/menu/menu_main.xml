@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/button_list_change"
+        android:title="履歴"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/button_insert_page"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="登録"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/button_setting"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="設定"
+        app:showAsAction="always" />
+</menu>

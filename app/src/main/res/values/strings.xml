@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Simple Plan Memo</string>
+
+    <string name="title_plan">予定</string>
+    <string name="title_history">履歴</string>
+
+    <string name="status_complete">complete</string>
+    <string name="status_incomplete">incomplete</string>
+
+    <string name="string_complete">完了</string>
+    <string name="string_incomplete">未完了</string>
+
+    <string-array name="status_list">
+        <item>@string/string_complete</item>
+        <item>@string/string_incomplete</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:id="@+id/text_title_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="通知の設定"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_notification_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="登録されている予定の内容が設定時間に通知されます"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_notification"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_title_notification_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="通知の表示："
+        app:layout_constraintTop_toBottomOf="@+id/text_notification_describe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_notification_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/text_title_notification_setting"
+        app:layout_constraintTop_toBottomOf="@+id/text_notification_describe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_title_notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="通知の設定時間："
+        app:layout_constraintTop_toBottomOf="@+id/text_title_notification_setting"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/text_title_notification_time"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_notification_setting"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_notification_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_notification_time"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:id="@+id/button_time_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:text="設定時間を変更する"
+        app:layout_constraintTop_toBottomOf="@+id/button_notification_setting"
+        tools:ignore="MissingConstraints"></Button>
+    <Button
+        android:id="@+id/button_test1"
+        android:text="今すぐ通知テスト"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_time_change"
+        tools:ignore="MissingConstraints"></Button>
+    <Button
+        android:id="@+id/button_test2"
+        android:text="アラームの動作を確認"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_test1"
+        tools:ignore="MissingConstraints"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
